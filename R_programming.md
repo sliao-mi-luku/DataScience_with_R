@@ -23,3 +23,27 @@ Create a default vector
 ```r
 vector(mode = 'numeric', length = 5)  # returns c(0, 0, 0, 0, 0)
 ```
+
+**matrix multiplication**
+
+```r
+arr1 = array(c(1,2,3,4), dim = c(2,2))
+arr2 = array(c(-1,-2,-3,-4), dim = c(2,2))
+res = arr1 %*% arr2
+```
+
+**adding columns/rows**
+
+```r
+x = c(1,2,3,4,5)
+y = c(6,7,8,9,10)
+
+z = cbind(x, y)
+w = rbind(x, y)
+```
+
+**subset**
+
+```r
+subset(iris, Species == 'virginica' & Petal.Length > 5)
+```
