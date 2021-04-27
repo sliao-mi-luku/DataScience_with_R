@@ -53,3 +53,9 @@ subset(iris, Species == 'virginica' & Petal.Length > 5)
 ```r
 attach(iris, warn.conflicts = FALSE)
 ```
+
+**printing variables**
+
+```r
+paste("Hello", var, sep = " ")
+```
