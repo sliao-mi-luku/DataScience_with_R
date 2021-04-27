@@ -47,3 +47,9 @@ w = rbind(x, y)
 ```r
 subset(iris, Species == 'virginica' & Petal.Length > 5)
 ```
+
+**allowing replacing data**
+
+```r
+attach(iris, warn.conflicts = FALSE)
+```
