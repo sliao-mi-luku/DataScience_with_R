@@ -46,8 +46,24 @@ $ git log --patch
 ```
 
 ### git show
-Display information about the given commit
 
+Display information about the given commit
 ```terminal
-$ 
+$ git show <SHA> -p
+
+$ git show <SHA> --stat
 ```
+
+Display information of the most recent commit
+```terminal
+$ git show
+```
+
+
+
+
+
+
+
+
+
