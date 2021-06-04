@@ -59,10 +59,36 @@ Display information of the most recent commit
 $ git show
 ```
 
+### git add
 
+Add the files from the working directory to the staging index.
 
+It's helpful to track the status by `$ git status` after any move.
 
+```terminal
+$ git add index.html
+$ git status
+```
+If a wrong file is added to the staging index, undo it by
 
+```terminal
+$ git rm --cached index.html
+```
+
+To stage all contents in a directory
+
+```terminal
+$ git add .
+```
+
+### git commit
+
+```terminal
+$ git commit
+
+# to avoid the editor step
+$ git commit -m "Initial commit"
+```
 
 
 
