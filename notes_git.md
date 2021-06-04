@@ -83,6 +83,8 @@ $ git add .
 
 ### git commit
 
+Take the files from the staging index and save them in the repository
+
 ```terminal
 $ git commit
 
