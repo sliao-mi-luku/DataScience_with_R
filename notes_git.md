@@ -1,22 +1,19 @@
-# Git
+# Git Tutorial
 
 Resrource:
 Udacity, Programming for Data Science in R Nanodegree
 
 ### create a repo
-
 ```terminal
 $ git init
 ```
 
 ### clone
-
 ```terminal
 $ git clone <link_of_the_existing_repo> <name_of_the_clone_repo>
 ```
 
 ### check status
-
 ```termimnal
 $ git status
 ```
