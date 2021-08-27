@@ -157,3 +157,16 @@ $ git reset --hard HEAD~1      # move the HEAD to HEAD~1, <SHA> will be moved to
 ### git reflog
 Access the commits that you deleted within 30 days.
 
+### git remote
+Manage remote repository
+```
+$ git remote           # display the remote repo you cloned
+$ git remove -v        # display the full path to the remote repo
+```
+
+### git push
+Send changes to the remote repository
+
+
+### git pull
+Retrieve updates from the remote repository
