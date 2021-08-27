@@ -112,4 +112,48 @@ If a merge conflict happens:
 4. stage the file
 5. make a commit
 
-###
+### git commit --amend
+Alter the most recent commit
+```
+$ git commit --amend
+```
+Using the commend directly after a commit can enable you to re-edit the commit messages.
+
+To amend files that you just recently committed:
+1. edit the files
+2. save the files
+3. stage the files
+4. run `$ git commit --amend`
+
+### git revert
+Reverse a specific commit
+```
+$ git revert <SHA>        # revert the <SHA> commit
+```
+Reverting a commit will create a new commit
+
+### Relative commit references
+`^` indicates the  **first** parent commit (the branch you were on when you run merging)
+`^2` indicates the  **second** parent commit (the branch you called to merged)
+`~` indicates the **first** parent commit
+
+
+The parent commit: `HEAD^`, `HEAD~`, or `HEAD~1`
+
+The grandparent commit: `HEAD^^` or `HEAD~2`
+
+The great-grandparent commit: `HEAD^^^` or `HEAD~3`
+
+### git reset
+Delete commits (dangerous). The new location of the HEAD is given by relative commit references (see above).
+```
+# assume that we are at HEAD -> <SHA>
+$ git reset HEAD~1             # move the HEAD to HEAD~1, <SHA> will be moved to the working directory
+$ git reset --mixed HEAD~1     # move the HEAD to HEAD~1, <SHA> will be moved to the working directory
+$ git reset --soft HEAD~1      # move the HEAD to HEAD~1, <SHA> will be moved to the staging index
+$ git reset --hard HEAD~1      # move the HEAD to HEAD~1, <SHA> will be moved to trash
+```
+
+### git reflog
+Access the commits that you deleted within 30 days.
+
