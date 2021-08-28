@@ -184,5 +184,17 @@ $ git fetch origin master        # pull origin to the local repo, the most recen
 $ git merge origin/master        # merge origin/master with master
 ```
 
+### git shortlog
+See how many commits each contributor has added
+```
+$ cd <repo_directory>
+$ git shortlog
+$ git short log       # just show the number and sort numerically
+```
 
+### search commits by contributors
+```
+$ git log --author=Sam           # see commits by a specific contributor
+$ git log --grep="bad bugs"      # filter commits that have the word "bad bugs"
+```
 
