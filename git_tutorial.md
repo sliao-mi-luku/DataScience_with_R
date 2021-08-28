@@ -167,7 +167,22 @@ $ git remote add origin <URL>     # create the connection from the local repo to
 
 ### git push
 Send changes to the remote repository
-
+```
+$ git push origin <BRANCH_NAME>   # push <BRANCH_NAME> to a remote repo (whose shortname is origin)
+```
 
 ### git pull
 Retrieve updates from the remote repository
+```
+$ git pull origin <BRANCH_NAME>   # pull a remote repo (whose shortname is origin) and merge to <BRANCH_NAME>
+```
+
+### git fetch
+Retrieve commites from the remote repository but without merging with the local branch
+```
+$ git fetch origin master        # pull origin to the local repo, the most recent commit retrieved will be pointed by origin/master
+$ git merge origin/master        # merge origin/master with master
+```
+
+
+
