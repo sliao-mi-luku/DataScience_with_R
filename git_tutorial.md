@@ -160,8 +160,9 @@ Access the commits that you deleted within 30 days.
 ### git remote
 Manage remote repository
 ```
-$ git remote           # display the remote repo you cloned
-$ git remove -v        # display the full path to the remote repo
+$ git remote                      # display the remote repo you cloned
+$ git remove -v                   # display the full path to the remote repo
+$ git remote add origin <URL>     # create the connection from the local repo to a remote repo
 ```
 
 ### git push
