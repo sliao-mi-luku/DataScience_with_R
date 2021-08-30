@@ -163,12 +163,14 @@ Manage remote repository
 $ git remote                      # display the remote repo you cloned
 $ git remove -v                   # display the full path to the remote repo
 $ git remote add origin <URL>     # create the connection from the local repo to a remote repo
+$ git remote rename <OLD> <NEW>   # rename the repository shortname from <OLD> to <NEW>
 ```
 
 ### git push
 Send changes to the remote repository
 ```
-$ git push origin <BRANCH_NAME>   # push <BRANCH_NAME> to a remote repo (whose shortname is origin)
+$ git push origin <BRANCH_NAME>     # push <BRANCH_NAME> to a remote repo (whose shortname is origin)
+$ git push -f origin <BRANCH_NAME>  # force push
 ```
 
 ### git pull
@@ -198,3 +200,7 @@ $ git log --author=Sam           # see commits by a specific contributor
 $ git log --grep="bad bugs"      # filter commits that have the word "bad bugs"
 ```
 
+### combine multiple commits into a single commit
+```
+$ git rebase -i HEAD~3        # combine HEAD, HEAD~1, HEAD~2 together
+```
